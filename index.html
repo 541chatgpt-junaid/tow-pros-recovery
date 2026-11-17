@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tow Pro's Recovery Services | 24/7 Vehicle Recovery Kent & Nationwide</title>
+<meta name="description" content="Tow Pro's Recovery Services — vehicle recovery, breakdown assistance, car & van transport and scrap car collection. Based in Kent, covering all areas. Call Charles on 07932 963369.">
+<meta name="theme-color" content="#0c0d0f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --asphalt:#0c0d0f; --tar:#16181c; --kerb:#23262c; --line:#30343b;
+  --hazard:#ffd400; --hazard-d:#e6bf00; --navy:#16247a; --white:#f4f2ec; --mute:#9a9ca3;
+  --display:'Big Shoulders Display',Impact,sans-serif; --mono:'DM Mono',ui-monospace,monospace; --body:'Instrument Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--asphalt);color:var(--white);font-family:var(--body);font-size:17px;line-height:1.55;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1240px,92vw);margin:0 auto}
+.mono{font-family:var(--mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}
+
+/* hazard ticker */
+.ticker{background:var(--hazard);color:var(--asphalt);overflow:hidden;white-space:nowrap;border-bottom:3px solid var(--asphalt)}
+.ticker-track{display:inline-flex;animation:tick 28s linear infinite;padding:.55rem 0}
+.ticker span{font-family:var(--display);font-weight:800;font-size:1.05rem;letter-spacing:.06em;padding:0 1.6rem;display:inline-flex;align-items:center;gap:1.6rem}
+.ticker span::after{content:"";width:22px;height:12px;background:repeating-linear-gradient(-45deg,var(--asphalt) 0 4px,transparent 4px 8px)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(12,13,15,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:72px}
+.plate{display:inline-flex;align-items:stretch;border-radius:6px;overflow:hidden;border:2px solid #111;box-shadow:0 2px 0 rgba(0,0,0,.4)}
+.plate .gb{background:var(--navy);color:#fff;font-family:var(--mono);font-size:.62rem;display:flex;flex-direction:column;justify-content:flex-end;padding:4px 6px;font-weight:500}
+.plate .reg{background:var(--hazard);color:#111;font-family:var(--display);font-weight:900;font-size:1.55rem;letter-spacing:.06em;padding:2px 12px;line-height:1.25}
+.nav-links{display:flex;gap:2rem;align-items:center}
+.nav-links a{font-size:.95rem;color:var(--mute);transition:color .2s}
+.nav-links a:hover{color:var(--white)}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--display);font-weight:800;font-size:1.15rem;letter-spacing:.05em;text-transform:uppercase;padding:.85rem 1.4rem;border-radius:4px;transition:transform .15s,background .2s;cursor:pointer;border:0}
+.btn:active{transform:translateY(2px)}
+.btn-y{background:var(--hazard);color:#111}
+.btn-y:hover{background:#fff}
+.btn-o{border:2px solid var(--line);color:var(--white);background:transparent}
+.btn-o:hover{border-color:var(--hazard);color:var(--hazard)}
+.btn svg{width:20px;height:20px}
+.nav-links .btn{padding:.6rem 1.1rem;font-size:1.05rem;color:#111}
+.burger{display:none;background:none;border:0;color:var(--white)}
+
+/* hero */
+.hero{position:relative;padding:5.5rem 0 4rem;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3.5rem;align-items:center}
+.status{display:inline-flex;align-items:center;gap:.6rem;border:1px solid var(--line);padding:.45rem .85rem;border-radius:99px;margin-bottom:1.8rem;color:var(--mute)}
+.dot{width:9px;height:9px;border-radius:50%;background:#2fe07a;box-shadow:0 0 0 0 rgba(47,224,122,.6);animation:pulse 1.8s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(47,224,122,0)}100%{box-shadow:0 0 0 0 rgba(47,224,122,0)}}
+h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(3.6rem,9vw,8.4rem);line-height:.86;letter-spacing:-.01em}
+h1 .y{color:var(--hazard);display:block}
+h1 .out{-webkit-text-stroke:2px var(--white);color:transparent}
+.lede{max-width:520px;color:#c9c9c4;font-size:1.15rem;margin:1.8rem 0 2.2rem}
+.cta-row{display:flex;flex-wrap:wrap;gap:.9rem}
+.hero-meta{display:flex;gap:2.4rem;margin-top:2.8rem;padding-top:1.6rem;border-top:1px dashed var(--line)}
+.hero-meta b{display:block;font-family:var(--display);font-size:2.2rem;font-weight:800;line-height:1;color:var(--white)}
+.hero-meta small{color:var(--mute)}
+
+.hero-photo{position:relative}
+.hero-photo .frame{border-radius:10px;overflow:hidden;aspect-ratio:4/5;position:relative;transform:rotate(1.5deg);box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.hero-photo .frame img{width:100%;height:100%;object-fit:cover}
+.hero-photo .frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(12,13,15,.85))}
+.dispatch{position:absolute;left:-2.4rem;bottom:2.2rem;background:var(--white);color:#111;border-radius:8px;padding:1rem 1.2rem;width:260px;box-shadow:0 18px 40px rgba(0,0,0,.5);transform:rotate(-2deg)}
+.dispatch .mono{color:#666;font-size:.68rem}
+.dispatch h4{font-family:var(--display);font-size:1.5rem;font-weight:900;text-transform:uppercase;line-height:1.05;margin:.25rem 0 .6rem}
+.dispatch .row{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.78rem;padding:.3rem 0;border-top:1px dashed #ccc}
+.dispatch .row b{font-weight:500}
+.tag{position:absolute;top:1.2rem;right:-1rem;background:var(--hazard);color:#111;font-family:var(--display);font-weight:900;font-size:1.1rem;padding:.4rem .9rem;transform:rotate(4deg);text-transform:uppercase;letter-spacing:.05em}
+
+/* road divider */
+.road{height:14px;background:var(--tar);position:relative;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.road::before{content:"";position:absolute;left:0;right:0;top:50%;height:3px;transform:translateY(-50%);background:repeating-linear-gradient(90deg,var(--white) 0 46px,transparent 46px 92px);opacity:.75;animation:drive 2.4s linear infinite}
+@keyframes drive{to{background-position:-92px 0}}
+
+section{padding:6.5rem 0}
+.eyebrow{color:var(--hazard);margin-bottom:1rem;display:flex;align-items:center;gap:.8rem}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--hazard)}
+h2{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(2.6rem,5.5vw,4.8rem);line-height:.92;letter-spacing:-.005em}
+h2 em{font-style:normal;color:var(--hazard)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;margin-bottom:3.5rem;flex-wrap:wrap}
+.sec-head p{max-width:420px;color:var(--mute)}
+
+/* services as mile markers */
+.services{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.svc{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:2rem 1.6rem 1.8rem;position:relative;min-height:250px;display:flex;flex-direction:column;transition:background .25s}
+.svc:hover{background:var(--tar)}
+.svc .num{font-family:var(--mono);color:var(--mute);font-size:.8rem}
+.svc .ico{width:46px;height:46px;margin:1.4rem 0 auto;color:var(--hazard)}
+.svc h3{font-family:var(--display);font-weight:800;font-size:1.75rem;text-transform:uppercase;line-height:1;margin:1.4rem 0 .5rem}
+.svc p{color:var(--mute);font-size:.95rem}
+.svc.feature{background:var(--hazard);color:#111}
+.svc.feature .num,.svc.feature p{color:#3b3500}
+.svc.feature .ico{color:#111}
+.svc.feature:hover{background:#ffe03d}
+
+/* scrap */
+.scrap{background:var(--white);color:#111;position:relative;overflow:hidden}
+.scrap::before{content:"";position:absolute;top:0;left:0;right:0;height:14px;background:repeating-linear-gradient(-45deg,#111 0 18px,var(--hazard) 18px 36px)}
+.scrap-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.scrap h2 em{color:var(--navy)}
+.scrap .eyebrow{color:var(--navy)} .scrap .eyebrow::before{background:var(--navy)}
+.scrap-copy p{color:#4a4a48;max-width:470px;margin:1.4rem 0}
+.ticks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.7rem 1.4rem;margin-top:1.6rem}
+.ticks li{display:flex;gap:.6rem;align-items:center;font-weight:600}
+.ticks li::before{content:"✓";width:24px;height:24px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:.8rem;flex:none}
+.quote-card{background:#111;color:var(--white);border-radius:12px;padding:2rem;box-shadow:0 30px 60px rgba(0,0,0,.25)}
+.quote-card h3{font-family:var(--display);font-size:2rem;font-weight:900;text-transform:uppercase;line-height:1}
+.quote-card .mono{color:var(--mute);margin:.4rem 0 1.4rem;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.4rem}
+.chip{border:1px solid var(--line);background:transparent;color:var(--white);font-family:var(--body);font-weight:500;font-size:.92rem;padding:.5rem .95rem;border-radius:99px;cursor:pointer;transition:all .15s}
+.chip:hover{border-color:var(--hazard)}
+.chip.on{background:var(--hazard);color:#111;border-color:var(--hazard)}
+label.lbl{display:block;margin-bottom:.5rem;color:var(--mute)}
+.plate-input{display:flex;border-radius:6px;overflow:hidden;border:3px solid #000;margin-bottom:1rem}
+.plate-input .gb{background:var(--navy);color:#fff;font-family:var(--mono);font-size:.75rem;display:flex;align-items:flex-end;padding:6px 8px}
+.plate-input input{flex:1;background:var(--hazard);border:0;font-family:var(--display);font-weight:900;font-size:2.2rem;letter-spacing:.12em;text-transform:uppercase;padding:.35rem .8rem;color:#111;outline:none;min-width:0;text-align:center}
+.plate-input input::placeholder{color:rgba(0,0,0,.3)}
+.field{width:100%;background:var(--tar);border:1px solid var(--line);color:var(--white);font-family:var(--body);font-size:1rem;padding:.85rem 1rem;border-radius:6px;margin-bottom:1rem;outline:none}
+.field:focus{border-color:var(--hazard)}
+.quote-card .btn{width:100%;justify-content:center}
+.fine{color:var(--mute);font-size:.82rem;margin-top:.9rem;text-align:center}
+
+/* job log */
+.log{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.job{background:var(--tar);border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:transform .3s}
+.job:hover{transform:translateY(-6px)}
+.job:nth-child(even){margin-top:3rem}
+.job .ph{aspect-ratio:3/4;overflow:hidden}
+.job .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.job:hover .ph img{transform:scale(1.06)}
+.job .info{padding:1rem 1.1rem 1.2rem}
+.job .mono{color:var(--hazard);font-size:.7rem}
+.job h4{font-family:var(--display);font-weight:800;font-size:1.35rem;text-transform:uppercase;line-height:1.05;margin-top:.35rem}
+.job p{color:var(--mute);font-size:.88rem;margin-top:.3rem}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:s;position:relative}
+.step{padding:0 2rem 0 0;position:relative}
+.step .big{font-family:var(--display);font-weight:900;font-size:7rem;line-height:.8;color:transparent;-webkit-text-stroke:1.5px var(--line)}
+.step h3{font-family:var(--display);font-weight:800;font-size:2rem;text-transform:uppercase;margin:1rem 0 .4rem}
+.step p{color:var(--mute);max-width:320px}
+.step::after{content:"";position:absolute;top:2.6rem;left:6.5rem;right:2rem;height:3px;background:repeating-linear-gradient(90deg,var(--hazard) 0 16px,transparent 16px 30px)}
+.step:last-child::after{display:none}
+
+/* coverage */
+.cover{background:var(--tar);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cover-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:4rem;align-items:center}
+.towns{display:flex;flex-wrap:wrap;gap:.2rem 1.4rem}
+.towns span{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(1.6rem,3vw,2.4rem);color:#3a3e46;line-height:1.15;transition:color .2s}
+.towns span:hover,.towns span.hl{color:var(--white)}
+.towns span.hl::after{content:" ●";color:var(--hazard);font-size:.6em;vertical-align:middle}
+
+/* final cta */
+.final{text-align:center;padding:8rem 0 7rem;position:relative;overflow:hidden}
+.final .huge{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(3rem,12vw,11rem);line-height:.85;letter-spacing:-.01em}
+.final .huge span{color:var(--hazard)}
+.final .phone{display:inline-block;font-family:var(--display);font-weight:900;font-size:clamp(2.2rem,6vw,4.4rem);margin:2rem 0 1.6rem;border-bottom:4px solid var(--hazard);line-height:1.1}
+.final .phone:hover{color:var(--hazard)}
+.final p{color:var(--mute)}
+.final .cta-row{justify-content:center;margin-top:1.8rem}
+
+footer{border-top:1px solid var(--line);padding:2.4rem 0 6rem;color:var(--mute);font-size:.9rem}
+.foot{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:center}
+.foot a:hover{color:var(--hazard)}
+.credit{margin-top:1.6rem;padding-top:1.4rem;border-top:1px dashed var(--line);font-size:.82rem;text-align:center}
+.credit a{color:var(--white)}
+
+/* mobile sticky call bar */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;grid-template-columns:1fr 1fr;border-top:2px solid #000}
+.callbar a{display:flex;align-items:center;justify-content:center;gap:.5rem;padding:1rem;font-family:var(--display);font-weight:900;font-size:1.2rem;text-transform:uppercase;letter-spacing:.04em}
+.callbar .c{background:var(--hazard);color:#111}
+.callbar .w{background:#1fa855;color:#fff}
+.callbar svg{width:20px;height:20px}
+
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:1000px){
+  .hero-grid,.scrap-grid,.cover-grid{grid-template-columns:1fr}
+  .hero-photo{max-width:480px;margin:0 auto;width:100%}
+  .services{grid-template-columns:repeat(2,1fr)}
+  .log{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr;gap:2.5rem}
+  .step::after{display:none}
+}
+@media (max-width:720px){
+  .nav-links{display:none}
+  .hero{padding-top:3rem}
+  .dispatch{left:.6rem;width:190px;bottom:1rem;padding:.75rem .9rem}
+  .dispatch h4{font-size:1.15rem}
+  .dispatch .row{font-size:.68rem}
+  .tag{right:.4rem}
+  .hero-meta{gap:1.4rem}
+  .hero-meta b{font-size:1.7rem}
+  section{padding:4.5rem 0}
+  .services{grid-template-columns:1fr}
+  .svc{min-height:auto}
+  .ticks{grid-template-columns:1fr}
+  .job:nth-child(even){margin-top:0}
+  .log{gap:.8rem}
+  .callbar{display:grid}
+  .quote-card{padding:1.4rem}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track">
+  <span>24/7 Vehicle Recovery</span><span>Based in Kent · Covering All Areas</span><span>We Buy Scrap Vehicles</span><span>Call Charles · 07932 963369</span><span>You Break It, We Take It</span>
+  <span>24/7 Vehicle Recovery</span><span>Based in Kent · Covering All Areas</span><span>We Buy Scrap Vehicles</span><span>Call Charles · 07932 963369</span><span>You Break It, We Take It</span>
+</div></div>
+
+<nav>
+  <div class="wrap nav-in">
+    <a href="#top" class="plate" aria-label="Tow Pro's home"><span class="gb">UK</span><span class="reg">TOW PRO'S</span></a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#scrap">Scrap My Car</a>
+      <a href="#jobs">Recent Jobs</a>
+      <a href="#coverage">Coverage</a>
+      <a href="tel:07932963369" class="btn btn-y">Call Now</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="status mono"><span class="dot"></span>Truck on the road · Kent &amp; nationwide</div>
+      <h1>Stuck?<span class="y">We're</span><span class="out">on our</span> way.</h1>
+      <p class="lede">Breakdowns, accidents, non-runners and scrap cars — Tow Pro's Recovery Services gets your vehicle off the roadside and where it needs to be. One call, a straight price, and a driver who actually turns up.</p>
+      <div class="cta-row">
+        <a href="tel:07932963369" class="btn btn-y"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>07932 963369</a>
+        <a href="https://wa.me/447932963369?text=Hi%20Charles%2C%20I%20need%20a%20recovery%20quote." class="btn btn-o" target="_blank" rel="noopener">WhatsApp a Photo</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>24/7</b><small>Call-outs</small></div>
+        <div><b>Kent</b><small>Based, UK-wide reach</small></div>
+        <div><b>£ Cash</b><small>Paid for scrap</small></div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="frame"><img src="img/night-recovery.jpg" alt="Tow Pro's Iveco recovery truck carrying a van at night at a fuel station" fetchpriority="high"></div>
+      <div class="tag">Night call-out</div>
+      <div class="dispatch">
+        <span class="mono">Dispatch · Live job</span>
+        <h4>Van recovered from fuel station</h4>
+        <div class="row"><span>Vehicle</span><b>Light commercial</b></div>
+        <div class="row"><span>Time</span><b>After dark</b></div>
+        <div class="row"><span>Status</span><b style="color:#11883f">● Delivered</b></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="road"></div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><div class="eyebrow mono">What we do</div><h2>Every way<br>a car can <em>let you down</em></h2></div>
+      <p>From a flat battery on the driveway to a full motorway recovery — one truck, one number, and no call-centre runaround.</p>
+    </div>
+    <div class="services reveal">
+      <div class="svc feature"><span class="num">01</span><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 32h26V18H4zM30 22h8l6 7v3h-14"/><circle cx="12" cy="34" r="4"/><circle cx="36" cy="34" r="4"/><path d="M8 18l6-8h12"/></svg><h3>Vehicle Recovery</h3><p>Accident, breakdown or non-runner — lifted, strapped and taken safely.</p></div>
+      <div class="svc"><span class="num">02</span><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M24 6 4 40h40z"/><path d="M24 18v10M24 33v2"/></svg><h3>Breakdown Recovery</h3><p>Roadside, car park or motorway — we come to you, day or night.</p></div>
+      <div class="svc"><span class="num">03</span><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="6" y="20" width="36" height="12" rx="3"/><path d="M12 20l4-8h16l4 8"/><circle cx="14" cy="34" r="3.5"/><circle cx="34" cy="34" r="3.5"/></svg><h3>Car &amp; Van Transport</h3><p>Bought a car miles away? Moving a project? Door-to-door delivery.</p></div>
+      <div class="svc"><span class="num">04</span><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="8" y="6" width="20" height="16" rx="2"/><path d="M28 14h10v8M38 22v8a6 6 0 1 1-6 6"/></svg><h3>Winch Outs</h3><p>Stuck in mud, ditches or verges — pulled out without the damage.</p></div>
+      <div class="svc"><span class="num">05</span><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="6" y="14" width="36" height="24" rx="3"/><path d="M14 14v-4M34 14v-4M26 18l-6 9h8l-6 9"/></svg><h3>Jump Starts</h3><p>Flat battery? We'll get you started and back on your way.</p></div>
+      <div class="svc"><span class="num">06</span><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="24" cy="24" r="18"/><circle cx="24" cy="24" r="6"/><path d="M24 6v12M24 30v12M6 24h12M30 24h12"/></svg><h3>Tyre Changes</h3><p>Puncture with no spare, or locking wheel nut drama — sorted.</p></div>
+      <div class="svc"><span class="num">07</span><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M24 44s14-13 14-24a14 14 0 0 0-28 0c0 11 14 24 14 24z"/><circle cx="24" cy="20" r="5"/></svg><h3>Local &amp; Nationwide</h3><p>Based in Kent, covering every area — short hops or long hauls.</p></div>
+      <a href="#scrap" class="svc" style="background:var(--navy)"><span class="num" style="color:#aab3ff">08</span><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M16 8l-6 10h10M32 8l6 10H28M8 34l6 8 4-10M40 34l-6 8-4-10"/></svg><h3>Scrap Vehicles →</h3><p style="color:#c9cdf5">Instant cash paid. Any condition, any size. Get a quote below.</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="scrap" id="scrap">
+  <div class="wrap scrap-grid">
+    <div class="scrap-copy reveal">
+      <div class="eyebrow mono">We buy scrap vehicles</div>
+      <h2>Dead car?<br><em>Turn it into cash.</em></h2>
+      <p>Bigger or smaller, running or not — we buy it all. Tell us what you've got and Charles will come back with a price. Free collection, paperwork handled, cash paid on the spot.</p>
+      <ul class="ticks">
+        <li>Instant cash paid</li><li>Free collection</li>
+        <li>All makes &amp; models</li><li>Hassle-free process</li>
+        <li>Fast &amp; friendly</li><li>Local &amp; nationwide</li>
+      </ul>
+    </div>
+    <form class="quote-card reveal" id="quote" onsubmit="return sendQuote(event)">
+      <h3>Get a scrap price</h3>
+      <span class="mono">Takes 30 seconds · goes straight to WhatsApp</span>
+      <label class="lbl mono">What is it?</label>
+      <div class="chips" id="chips">
+        <button type="button" class="chip on">Car</button><button type="button" class="chip">Van</button><button type="button" class="chip">4x4</button><button type="button" class="chip">Light commercial</button><button type="button" class="chip">Caravan</button><button type="button" class="chip">Motorbike</button><button type="button" class="chip">Quad</button>
+      </div>
+      <label class="lbl mono" for="reg">Registration</label>
+      <div class="plate-input"><span class="gb">UK</span><input id="reg" maxlength="8" placeholder="AB12 CDE" autocomplete="off"></div>
+      <label class="lbl mono" for="pc">Postcode</label>
+      <input class="field" id="pc" placeholder="e.g. ME14" autocomplete="postal-code">
+      <button class="btn btn-y" type="submit"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7a12 12 0 0 1-4.7-4.2c-.4-.5-1-1.6-1-2.8s.7-1.9 1-2.1c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.4.1.1.1.7-.2 1.4z"/></svg>Get my price on WhatsApp</button>
+      <p class="fine">Prefer to talk? Call Charles on <a href="tel:07932963369" style="color:var(--hazard)">07932 963369</a></p>
+    </form>
+  </div>
+</section>
+
+<section id="jobs">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><div class="eyebrow mono">Job log</div><h2>Fresh off<br><em>the back of the truck</em></h2></div>
+      <p>Real jobs, real vehicles. Daily runs, classic cars and late-night call-outs — this is what a normal week looks like.</p>
+    </div>
+    <div class="log">
+      <article class="job reveal"><div class="ph"><img src="img/night-recovery.jpg" alt="Van loaded on recovery truck at night" loading="lazy"></div><div class="info"><span class="mono">Job · Night call-out</span><h4>Work van recovery</h4><p>Collected from a fuel station forecourt after dark.</p></div></article>
+      <article class="job reveal"><div class="ph"><img src="img/fiesta-sunset.jpg" alt="Black Ford Fiesta strapped on recovery truck at sunset" loading="lazy"></div><div class="info"><span class="mono">Job · Sunset run</span><h4>Ford Fiesta Titanium</h4><p>Strapped down and moved before the light went.</p></div></article>
+      <article class="job reveal"><div class="ph"><img src="img/golf-collection.jpg" alt="Red Volkswagen Golf on recovery truck outside a house" loading="lazy"></div><div class="info"><span class="mono">Job · Driveway pickup</span><h4>VW Golf collection</h4><p>Straight from the customer's front door.</p></div></article>
+      <article class="job reveal"><div class="ph"><img src="img/classic-capri.jpg" alt="Classic red Ford Capri on recovery truck" loading="lazy"></div><div class="info"><span class="mono">Job · Classic transport</span><h4>Ford Capri</h4><p>Treated like the classic it is — wheel straps, no rush.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:2rem">
+  <div class="wrap">
+    <div class="sec-head reveal"><div><div class="eyebrow mono">How it works</div><h2>Three steps.<br><em>No drama.</em></h2></div></div>
+    <div class="steps reveal">
+      <div class="step"><div class="big">01</div><h3>Call or WhatsApp</h3><p>Tell us where you are and what's wrong. Send a photo and a pin if you can.</p></div>
+      <div class="step"><div class="big">02</div><h3>Get a straight price</h3><p>A clear quote before we roll — no surprise extras at the roadside.</p></div>
+      <div class="step"><div class="big">03</div><h3>We take it away</h3><p>Loaded, secured and delivered to the garage, your home or wherever it needs to go.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cover" id="coverage">
+  <div class="wrap cover-grid">
+    <div class="reveal">
+      <div class="eyebrow mono">Coverage</div>
+      <h2>Based in Kent.<br><em>Covering all areas.</em></h2>
+      <p style="color:var(--mute);margin-top:1.4rem;max-width:420px">Kent is home, but the truck goes wherever you need it — local jobs across the county and nationwide transport up and down the UK.</p>
+    </div>
+    <div class="towns reveal">
+      <span class="hl">Maidstone</span><span>Canterbury</span><span>Ashford</span><span class="hl">Medway</span><span>Tonbridge</span><span>Sevenoaks</span><span>Dartford</span><span>Gravesend</span><span>Folkestone</span><span>Dover</span><span class="hl">Tunbridge Wells</span><span>Sittingbourne</span><span>Margate</span><span>London</span><span>&amp; nationwide</span>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div class="huge reveal">You break it.<br><span>We take it.</span></div>
+    <a href="tel:07932963369" class="phone">07932 963369</a>
+    <p>Ask for Charles · Recovery, transport &amp; scrap — any time</p>
+    <div class="cta-row">
+      <a href="tel:07932963369" class="btn btn-y">Call Now</a>
+      <a href="https://wa.me/447932963369" class="btn btn-o" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a href="#top" class="plate"><span class="gb">UK</span><span class="reg" style="font-size:1.2rem">TOW PRO'S</span></a>
+      <span>Tow Pro's Recovery Services · Based in Kent · <a href="tel:07932963369">07932 963369</a></span>
+      <span>© <span id="yr"></span> All rights reserved</span>
+    </div>
+    <div class="credit">Website designed by <a href="https://wa.me/923130709941" target="_blank" rel="noopener">JM Digital Marketing</a> · WhatsApp +92 313 0709941</div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a href="tel:07932963369" class="c"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call</a>
+  <a href="https://wa.me/447932963369" class="w" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+const chips=document.querySelectorAll('.chip');
+chips.forEach(c=>c.addEventListener('click',()=>{chips.forEach(x=>x.classList.remove('on'));c.classList.add('on')}));
+function sendQuote(e){
+  e.preventDefault();
+  const type=document.querySelector('.chip.on').textContent;
+  const reg=document.getElementById('reg').value.trim().toUpperCase()||'not given';
+  const pc=document.getElementById('pc').value.trim().toUpperCase()||'not given';
+  const msg=`Hi Charles, I'd like a scrap price.\nVehicle: ${type}\nReg: ${reg}\nPostcode: ${pc}`;
+  window.open('https://wa.me/447932963369?text='+encodeURIComponent(msg),'_blank');
+  return false;
+}
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
